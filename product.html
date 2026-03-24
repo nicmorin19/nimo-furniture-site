@@ -19,8 +19,8 @@
                         primary: '#0F172A', 
                         secondary: '#475569', 
                         accent: '#F8FAFC', 
-                        success: '#166534', // Darker green for contrast
-                        nimoRed: '#DC2626' // Red Accent
+                        success: '#166534', 
+                        nimoRed: '#DC2626' 
                     }
                 }
             }
@@ -29,115 +29,105 @@
     <style>
         body { font-family: 'Inter', sans-serif; }
         .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
-        .no-scrollbar::-webkit-scrollbar { display: none; }
-        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        /* This ensures the white background of the iStock photo blends into our UI */
+        .product-image-blend { mix-blend-mode: multiply; }
     </style>
 </head>
 <body class="bg-white text-primary antialiased pt-20">
 
     <header class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300" id="navbar">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-20">
-            
-            <a href="index.html" class="flex-shrink-0 flex items-center group">
-                <div class="bg-nimoRed text-white font-bold text-xl px-4 py-2 tracking-tight transition-transform duration-300 group-hover:scale-105">
-                    NiMo
-                </div>
-            </a>
-            
-            <nav class="hidden md:flex space-x-8 h-full items-center">
-                
-                <div class="relative group h-full flex items-center">
-                    <button class="flex items-center text-sm font-medium text-secondary group-hover:text-nimoRed transition">
-                        Products
-                        <svg class="ml-1 w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-
-                    <div class="absolute top-full left-0 w-64 bg-white border border-gray-100 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0">
-                        <div class="py-2">
-                            <a href="product.html" class="block px-6 py-3 text-sm text-secondary hover:bg-accent hover:text-nimoRed transition font-medium">Chairs</a>
-                            
-                            <a href="#" class="block px-6 py-3 text-sm text-secondary hover:bg-accent hover:text-nimoRed transition">Desks</a>
-                            <a href="#" class="block px-6 py-3 text-sm text-secondary hover:bg-accent hover:text-nimoRed transition">Tables</a>
-                            <a href="#" class="block px-6 py-3 text-sm text-secondary hover:bg-accent hover:text-nimoRed transition">Cubicles and Partitions</a>
-                            
-                            <div class="border-t border-gray-50 my-1"></div>
-                            <a href="#" class="block px-6 py-3 text-xs font-bold uppercase tracking-widest text-gray-400 hover:text-nimoRed transition">View All Collections</a>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex-shrink-0 flex items-center group">
+                    <div class="bg-nimoRed text-white font-bold text-xl px-4 py-2 tracking-tight transition-transform duration-300 group-hover:scale-105">NiMo</div>
+                </a>
+                <nav class="hidden md:flex space-x-8 h-full items-center">
+                    <div class="relative group h-full flex items-center">
+                        <button class="flex items-center text-sm font-medium text-nimoRed group-hover:text-nimoRed transition">
+                            Products
+                            <svg class="ml-1 w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute top-full left-0 w-64 bg-white border border-gray-100 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0">
+                            <div class="py-2">
+                                <a href="product.html" class="block px-6 py-3 text-sm text-nimoRed bg-accent transition font-medium">Chairs</a>
+                                <a href="#" class="block px-6 py-3 text-sm text-secondary hover:bg-accent hover:text-nimoRed transition">Desks</a>
+                                <a href="#" class="block px-6 py-3 text-sm text-secondary hover:bg-accent hover:text-nimoRed transition">Tables</a>
+                                <a href="#" class="block px-6 py-3 text-sm text-secondary hover:bg-accent hover:text-nimoRed transition">Cubicles and Partitions</a>
+                                <div class="border-t border-gray-50 my-1"></div>
+                                <a href="#" class="block px-6 py-3 text-xs font-bold uppercase tracking-widest text-gray-400 hover:text-nimoRed transition">View All Collections</a>
+                            </div>
                         </div>
                     </div>
+                    <a href="services.html" class="text-sm font-medium text-secondary hover:text-nimoRed transition">Services</a>
+                    <a href="about.html" class="text-sm font-medium text-secondary hover:text-nimoRed transition">About</a>
+                    <a href="contact.html" class="text-sm font-medium text-secondary hover:text-nimoRed transition">Contact</a>
+                </nav>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="quote.html" class="bg-nimoRed text-white px-5 py-2.5 text-sm font-medium hover:bg-red-700 transition shadow-lg shadow-red-900/10">Request Quote</a>
                 </div>
-
-                <a href="services.html" class="text-sm font-medium text-secondary hover:text-nimoRed transition">Services</a>
-                <a href="about.html" class="text-sm font-medium text-secondary hover:text-nimoRed transition">About</a>
-                <a href="contact.html" class="text-sm font-medium text-secondary hover:text-nimoRed transition">Contact</a>
-            </nav>
-
-            <div class="hidden md:flex items-center space-x-4">
-                <a href="quote.html" class="bg-nimoRed text-white px-5 py-2.5 text-sm font-medium hover:bg-red-700 transition shadow-lg shadow-red-900/10">Request Quote</a>
-            </div>
-
-            <div class="md:hidden flex items-center">
-                <button id="mobile-menu-btn" class="text-secondary hover:text-nimoRed focus:outline-none">
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="square" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
             </div>
         </div>
-    </div>
-</header>
+    </header>
 
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 pt-6">
-        <div class="lg:grid lg:grid-cols-2 lg:gap-16">
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
             
+            <div class="relative group bg-accent rounded-3xl p-8 lg:p-16 flex items-center justify-center overflow-hidden min-h-[500px]">
+                <img 
+                    src="https://media.istockphoto.com/id/155352786/photo/office-chair.jpg?s=2048x2048&w=is&k=20&c=8CWTKNfUOZU4fiF6_nj_fVJrvP0ZGyVQVcLXvYRiwIc=" 
+                    alt="NiMo Atlas Task Chair" 
+                    class="product-image-blend w-full h-auto object-contain transform group-hover:scale-105 transition-transform duration-700"
+                >
+                <div class="absolute top-6 left-6 bg-nimoRed text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 shadow-lg shadow-red-900/20">
+                    Best Seller
+                </div>
+            </div>
+
             <div class="flex flex-col justify-center">
-                <div class="mb-6">
-                    <h1 class="text-4xl font-bold tracking-tight mb-2">The Atlas Task Chair</h1>
-                    <div class="flex items-center gap-2 mb-4 text-sm text-secondary">
-                        <div class="flex text-nimoRed">
-                            ★ ★ ★ ★ ★
-                        </div>
-                        <span>4.9 (128 reviews)</span>
+                <div class="mb-8">
+                    <h1 class="text-5xl font-bold tracking-tight mb-4 text-primary">The Atlas Task Chair</h1>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="flex text-nimoRed text-lg">★★★★★</div>
+                        <span class="text-secondary font-medium tracking-wide text-sm underline underline-offset-4 cursor-pointer">4.9 (128 verified reviews)</span>
                     </div>
-                    <p class="text-2xl font-medium">$595.00</p>
+                    <p class="text-3xl font-light text-primary tracking-tight">$595.00</p>
                 </div>
 
-                <p class="text-secondary text-base leading-relaxed mb-8">
-                    Engineered by NiMo for 12-hour comfort. The Atlas adapts to your spine's natural curve, promoting active posture and eliminating lower back fatigue. Featuring breathable mesh and weight-responsive tilt.
+                <p class="text-secondary text-lg leading-relaxed mb-10 max-w-lg">
+                    Engineered by NiMo for 12-hour comfort. The Atlas adapts to your spine's natural curve, promoting active posture and eliminating lower back fatigue.
                 </p>
 
-                <div class="mb-8 border-t border-gray-100 pt-6">
-                    <h3 class="text-sm font-medium mb-3">Frame Color: <span class="text-secondary font-normal" id="color-name">Graphite Black</span></h3>
-                    <div class="flex gap-3">
-                        <button onclick="selectColor(this, 'Graphite Black')" class="w-10 h-10 rounded-full bg-[#2d2d2d] border-2 border-nimoRed ring-2 ring-transparent transition focus:outline-none" aria-label="Graphite Black"></button>
-                        <button onclick="selectColor(this, 'Cloud White')" class="w-10 h-10 rounded-full bg-[#f4f4f4] border-2 border-gray-200 hover:border-nimoRed transition focus:outline-none" aria-label="Cloud White"></button>
+                <div class="mb-10 border-t border-gray-100 pt-8">
+                    <h3 class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">Frame Finish</h3>
+                    <div class="flex gap-4">
+                        <button class="w-12 h-12 rounded-full bg-[#2d2d2d] ring-2 ring-offset-4 ring-nimoRed transition focus:outline-none" aria-label="Graphite Black"></button>
+                        <button class="w-12 h-12 rounded-full bg-[#f4f4f4] ring-2 ring-transparent ring-offset-4 hover:ring-gray-200 transition focus:outline-none border border-gray-100" aria-label="Cloud White"></button>
                     </div>
                 </div>
 
-                <div class="flex flex-col sm:flex-row gap-4 mb-8">
-                    <div class="flex items-center border border-gray-300 w-full sm:w-32 focus-within:border-nimoRed">
-                        <button class="px-4 py-3 text-secondary hover:text-nimoRed transition">−</button>
-                        <input type="number" value="1" min="1" class="w-full text-center focus:outline-none font-medium appearance-none">
-                        <button class="px-4 py-3 text-secondary hover:text-nimoRed transition">+</button>
+                <div class="flex flex-col sm:flex-row gap-4 mb-10">
+                    <div class="flex items-center border-2 border-gray-100 w-full sm:w-40 px-2">
+                        <button class="px-4 py-4 text-secondary hover:text-nimoRed text-xl font-light transition">−</button>
+                        <input type="number" value="1" min="1" class="w-full text-center focus:outline-none font-bold bg-transparent appearance-none">
+                        <button class="px-4 py-4 text-secondary hover:text-nimoRed text-xl font-light transition">+</button>
                     </div>
-                    <button class="w-full bg-nimoRed text-white px-8 py-4 font-medium hover:bg-red-700 transition flex items-center justify-center gap-2">
+                    <button class="w-full bg-nimoRed text-white px-10 py-5 font-bold tracking-wide hover:bg-red-700 transition-all transform active:scale-[0.98] shadow-xl shadow-red-900/10">
                         Add to Cart — $595
                     </button>
                 </div>
 
-                <div class="bg-accent p-4 border border-gray-100 flex items-center justify-between mb-8">
-                    <div class="text-sm">
-                        <span class="font-semibold block">Outfitting an office?</span>
-                        <span class="text-secondary">Unlock NiMo bulk pricing.</span>
+                <div class="bg-accent p-6 border-l-4 border-nimoRed flex items-center justify-between group">
+                    <div>
+                        <span class="font-bold text-sm block mb-1">Outfitting a commercial space?</span>
+                        <span class="text-secondary text-sm">Get custom quotes for bulk orders and floor planning.</span>
                     </div>
-                    <a href="/quote" class="text-sm font-medium text-nimoRed border-b border-nimoRed pb-0.5 hover:text-red-700 hover:border-red-700 transition">Request Bulk Quote</a>
+                    <a href="quote.html" class="ml-4 p-3 bg-white border border-gray-200 rounded-full group-hover:bg-nimoRed group-hover:text-white transition-all duration-300">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </a>
                 </div>
-
-                </div>
+            </div>
         </div>
     </section>
 
-    </body>
+</body>
 </html>
