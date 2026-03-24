@@ -195,6 +195,23 @@
             <p>&copy; 2026 NiMo Workspace Solutions. All rights reserved.</p>
         </div>
     </footer>
+<script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
 
+    btn.addEventListener('click', () => {
+        const isHidden = menu.classList.toggle('hidden');
+        if (isHidden) {
+            hamburgerIcon.classList.remove('hidden');
+            closeIcon.classList.add('hidden');
+        } else {
+            hamburgerIcon.classList.add('hidden');
+            closeIcon.classList.remove('hidden');
+        }
+    });
+</script>
+    
 </body>
 </html>
