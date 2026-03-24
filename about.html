@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About NiMo | Our Story & Mission</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: { primary: '#0F172A', secondary: '#475569', accent: '#F8FAFC', nimoRed: '#DC2626' }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-primary antialiased pt-20">
+
+    <header class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
+            <a href="index.html" class="group">
+                <div class="bg-nimoRed text-white font-bold text-xl px-4 py-2 transition-transform group-hover:scale-105">NiMo</div>
+            </a>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="product.html" class="text-sm font-medium text-secondary hover:text-nimoRed transition">Products</a>
+                <a href="services.html" class="text-sm font-medium text-secondary hover:text-nimoRed transition">Services</a>
+                <a href="about.html" class="text-sm font-medium text-nimoRed border-b-2 border-nimoRed pb-1">About</a>
+                <a href="contact.html" class="text-sm font-medium text-secondary hover:text-nimoRed transition">Contact</a>
+            </nav>
+            <a href="quote.html" class="hidden md:block bg-nimoRed text-white px-5 py-2.5 text-sm font-medium hover:bg-red-700 transition">Request Quote</a>
+        </div>
+    </header>
+
+    <section class="py-24 bg-accent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl lg:text-6xl font-bold tracking-tight mb-8">We believe work should <span class="text-nimoRed">feel better.</span></h1>
+                <p class="text-lg text-secondary leading-relaxed">NiMo was founded on a simple observation: the modern world has changed, but the way we sit hasn't. We bridge the gap between architectural beauty and orthopedic science.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+            <div>
+                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1000" alt="NiMo Office Culture" class="shadow-2xl">
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold mb-6">Built for the 12-Hour Day</h2>
+                <p class="text-secondary mb-8 leading-relaxed text-lg">Our furniture isn't designed in a vacuum. We collaborate with interior designers, physical therapists, and tech innovators to ensure every NiMo piece supports the dynamic movements of a high-performance workday.</p>
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-bold text-nimoRed text-xl mb-2">Sustainable</h4>
+                        <p class="text-sm text-secondary">85% recycled materials across our entire chair line.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-nimoRed text-xl mb-2">Ergonomic</h4>
+                        <p class="text-sm text-secondary">Weight-responsive tension technology in every seat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
