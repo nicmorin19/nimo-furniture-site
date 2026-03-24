@@ -35,11 +35,11 @@
 </head>
 <body class="bg-white text-primary antialiased pt-20">
 
-    <header class="fixed w-full top-0 z-50 glass-nav border-b border-gray-100 transition-all duration-300" id="navbar">
+    <header class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300" id="navbar">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
             
-            <a href="index.html" class="flex-shrink-0 flex items-center cursor-pointer group">
+            <a href="index.html" class="flex-shrink-0 flex items-center group">
                 <div class="bg-nimoRed text-white font-bold text-xl px-4 py-2 tracking-tight transition-transform duration-300 group-hover:scale-105">
                     NiMo
                 </div>
@@ -55,21 +55,23 @@
                         </svg>
                     </button>
 
-                    <div class="absolute top-full left-0 w-56 bg-white border border-gray-100 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0">
+                    <div class="absolute top-full left-0 w-64 bg-white border border-gray-100 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0">
                         <div class="py-2">
-                            <a href="product.html" class="block px-6 py-3 text-sm text-secondary hover:bg-accent hover:text-nimoRed transition">Chairs</a>
+                            <a href="product.html" class="block px-6 py-3 text-sm text-secondary hover:bg-accent hover:text-nimoRed transition font-medium">Chairs</a>
+                            
                             <a href="#" class="block px-6 py-3 text-sm text-secondary hover:bg-accent hover:text-nimoRed transition">Desks</a>
                             <a href="#" class="block px-6 py-3 text-sm text-secondary hover:bg-accent hover:text-nimoRed transition">Tables</a>
                             <a href="#" class="block px-6 py-3 text-sm text-secondary hover:bg-accent hover:text-nimoRed transition">Cubicles and Partitions</a>
+                            
                             <div class="border-t border-gray-50 my-1"></div>
-                            <a href="#" class="block px-6 py-3 text-xs font-bold uppercase tracking-widest text-gray-400">View All Products</a>
+                            <a href="#" class="block px-6 py-3 text-xs font-bold uppercase tracking-widest text-gray-400 hover:text-nimoRed transition">View All Collections</a>
                         </div>
                     </div>
                 </div>
 
                 <a href="services.html" class="text-sm font-medium text-secondary hover:text-nimoRed transition">Services</a>
-                <a href="#" class="text-sm font-medium text-secondary hover:text-nimoRed transition">About</a>
-                <a href="#" class="text-sm font-medium text-secondary hover:text-nimoRed transition">Journal</a>
+                <a href="about.html" class="text-sm font-medium text-secondary hover:text-nimoRed transition">About</a>
+                <a href="contact.html" class="text-sm font-medium text-secondary hover:text-nimoRed transition">Contact</a>
             </nav>
 
             <div class="hidden md:flex items-center space-x-4">
@@ -77,7 +79,7 @@
             </div>
 
             <div class="md:hidden flex items-center">
-                <button id="mobile-menu-btn" class="text-secondary hover:text-nimoRed">
+                <button id="mobile-menu-btn" class="text-secondary hover:text-nimoRed focus:outline-none">
                     <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="square" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                     </svg>
